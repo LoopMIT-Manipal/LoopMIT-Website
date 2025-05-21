@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shloksomani.github.io/react-portfolio/",
+  "homepage": "https://loopmit.in",
   "dependencies": {
     "bootstrap": "^4.6.2",
     "compose-function": "^3.0.3",

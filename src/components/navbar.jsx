@@ -3,6 +3,7 @@ import $ from "jquery";
 import { useTheme } from "../context/ThemeContext.jsx";
 import logo2 from "../img/logo2.png";
 import logox from "../img/logo.png";
+import mahelogo from "../img/sponsor_pics/mahe.png"
 
 function Navbar() {
   const [logo, setLogo] = React.useState(logox);
@@ -60,15 +61,17 @@ function Navbar() {
     handleScroll();
 
     $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
-      if (
+      if (  
         window.location.pathname.replace(/^\//, "") ===
           this.pathname.replace(/^\//, "") &&
         window.location.hostname === this.hostname
-      ) {
+      ) {   
+       
         var target = $(this.hash);
         target = target.length
           ? target
           : $("[name=" + this.hash.slice(1) + "]");
+        
         if (target.length) {
           $("html, body").animate(
             {
@@ -124,6 +127,13 @@ function Navbar() {
             style={{ maxWidth: "150px" }}
           />
         </a>
+        <a className="navbar-brand js-scroll" href="#page-top">
+          <img
+            src={mahelogo}
+            alt="logo"
+            style={{ maxWidth: "100px" }}
+          />
+        </a>
         <button
           className="navbar-toggler collapsed"
           type="button"
@@ -172,6 +182,11 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link js-scroll" href="#work">
                 Team
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link js-scroll" href="#sponsors">
+                Sponsors
               </a>
             </li>
             <li className="nav-item">

@@ -127,13 +127,7 @@ function Navbar() {
             style={{ maxWidth: "150px" }}
           />
         </a>
-        <a className="navbar-brand js-scroll" href="#page-top">
-          <img
-            src={mahelogo}
-            alt="logo"
-            style={{ maxWidth: "100px" }}
-          />
-        </a>
+        
         <button
           className="navbar-toggler collapsed"
           type="button"
@@ -148,7 +142,7 @@ function Navbar() {
           <span></span>
         </button>
         <div
-          className="navbar-collapse collapse justify-content-end"
+          className="navbar-collapse collapse justify-content-center"
           id="navbarDefault"
         >
           <ul className="navbar-nav">
@@ -196,6 +190,13 @@ function Navbar() {
             </li>
           </ul>
         </div>
+        <a className="navbar-brand js-scroll" href="#page-top">
+          <img
+            src={mahelogo}
+            alt="logo"
+            style={{ maxWidth: "100px" }}
+          />
+        </a>
       </div>
     </nav>
   );

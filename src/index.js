@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from './context/ThemeContext.jsx';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //import css in order
 import 'normalize.css';
@@ -22,14 +23,9 @@ import 'lightbox2/dist/js/lightbox.min.js';
 import * as serviceWorker from './serviceWorker';
 
 //import components
-import Navbar from './components/navbar.jsx';
-import Intro from './components/intro.jsx';
-import About from './components/about.jsx';
-import Portfolio from './components/portfolio.jsx';
-import Sponsors from './components/sponsor.jsx';
-import Contact from './components/contact.jsx';
-import BackToTop from './components/back-top.jsx';
-import Preloader from './components/preloader';
+import Home from './Home.jsx';
+import Achievements from './components/achievements.jsx';
+
 
 
 
@@ -37,14 +33,12 @@ import Preloader from './components/preloader';
 ReactDOM.render(
     <React.Fragment>
         <ThemeProvider>
-        <Navbar />
-        <Intro />
-        <About />
-        <Portfolio />
-        <Sponsors/>
-        <Contact />
-        <BackToTop />
-        <Preloader />
+         <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/achievements" component={Achievements} />
+        </Switch>
+      </Router>
         </ThemeProvider>
     </React.Fragment>,
 document.getElementById('root'));

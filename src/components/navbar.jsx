@@ -4,8 +4,11 @@ import { useTheme } from "../context/ThemeContext.jsx";
 import logo2 from "../img/logo2.png";
 import logox from "../img/logo.png";
 import mahelogo from "../img/sponsor_pics/mahe.png"
+import { useHistory, useLocation } from "react-router-dom/cjs/react-router-dom.min.js";
 
 function Navbar() {
+  const location = useLocation()
+  const history = useHistory()
   const [logo, setLogo] = React.useState(logox);
   const { darkMode, toggleDarkMode } = useTheme();
 

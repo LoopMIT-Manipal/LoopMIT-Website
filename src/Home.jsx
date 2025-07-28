@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 //import components
 import Navbar from './components/navbar.jsx';
 import Intro from './components/intro.jsx';
@@ -13,19 +13,21 @@ import Preloader from './components/preloader';
 
 
 const Home = () => {
-    const location = useLocation();
-      useEffect(() => {
-    const scrollTo = location.state?.scrollTo;
-    if (scrollTo) {
-      const target = document.getElementById(scrollTo);
-      if (target) {
-        const offset = document.querySelector("nav")?.offsetHeight || 80;
-        setTimeout(() => {
-          window.scrollTo({ top: target.offsetTop - offset + 5, behavior: "smooth" });
-        }, 100);
-      }
+  const location = useLocation();
+useEffect(() => {
+  const scrollTo = location.state?.scrollTo;
+  if (scrollTo) {
+    const target = document.getElementById(scrollTo);
+    if (target) {
+      const offset = document.querySelector("nav")?.offsetHeight || 80;
+      setTimeout(() => {
+        window.scrollTo({ top: target.offsetTop - offset + 5, behavior: "smooth" });
+      }, 1000);
     }
-  }, [location]);
+  }
+  console.log(location.state)
+}, [location]);
+
   return (
     <div>
       <Navbar />

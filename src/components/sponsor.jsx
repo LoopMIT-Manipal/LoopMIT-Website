@@ -12,7 +12,7 @@ import cadfem from "../img/sponsor_pics/cadfem.png";
 import emworks from "../img/sponsor_pics/emworks.png";
 import janatics from "../img/sponsor_pics/janatics.png";
 import solidworks from "../img/sponsor_pics/solidworks.png";
-import honeycomb from "../img/sponsor_pics/honeycomb.jpg"
+import honeycomb from "../img/sponsor_pics/honeycomb.png"
 
 //import "./Sponsors.css"; // We'll create this CSS file next
 

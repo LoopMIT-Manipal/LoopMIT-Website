@@ -6,6 +6,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/LoopMIT-Website/',
   server: {
     port: 3000,
     open: true

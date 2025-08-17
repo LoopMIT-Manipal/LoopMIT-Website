@@ -25,7 +25,7 @@ useEffect(() => {
       }, 1000);
     }
   }
-  console.log(location.state)
+  //console.log(location.state)
 }, [location]);
 
   return (

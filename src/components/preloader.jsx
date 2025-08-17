@@ -23,7 +23,7 @@ export default function Preloader() {
     // Once loaded, remove preloader from render tree
     return null;
   }
-  console.log(loaded)
+  //console.log(loaded)
   return (
     <div id="preloader" className={loaded ? 'fadeOut' : 'fadeIn'} />
   );

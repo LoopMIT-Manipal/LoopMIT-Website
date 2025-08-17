@@ -2,7 +2,7 @@
 import React from 'react';
 
 const TeamMember = ({ image, name, skills }) => {
-  console.log(image);
+  
   return (
     <div className="col-md-2 col-sm-6 col-6 custom-card" style={{ marginBottom: "80px" }}>
   <div className="work-box">

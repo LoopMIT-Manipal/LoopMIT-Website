@@ -6,7 +6,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // keep this since you have a custom domain
+  base: './', // keep this since you have a custom domain
   build: {
     outDir: 'docs', // ⬅ GitHub Pages will use this
   },

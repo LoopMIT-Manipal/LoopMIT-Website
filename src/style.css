@@ -1732,10 +1732,5 @@ BUTTON
 
 
 /* SPONSORS */
-.sponsor-logo {
-  max-height: 80px;   /* bigger than 50px */
-  width: auto;
-  object-fit: contain;
-  background-color: #f0f0f0; /* temp debug background to "see" the logo area */
-}
+
 

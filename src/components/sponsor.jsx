@@ -13,6 +13,7 @@ import emworks from "../img/sponsor_pics/emworks.png";
 import janatics from "../img/sponsor_pics/janatics.png";
 import solidworks from "../img/sponsor_pics/solidworks.png";
 import honeycomb from "../img/sponsor_pics/honeycomb.png"
+import devcomponents from "../img/sponsor_pics/devcomponents.png";
 
 //import "./Sponsors.css"; // We'll create this CSS file next
 
@@ -94,6 +95,12 @@ const sponsor = ({ logo, name, url }) => {
       name: "Sponsor 4",
       logo: honeycomb, // Replace with actual path to logo
       url: "https://honeycombindia.com/"
+    },
+    {
+      id: 11,
+      name: "Sponsor 4",
+      logo: devcomponents, // Replace with actual path to logo
+      url: "https://stampinglaminations.com//"
     }
   ];
 

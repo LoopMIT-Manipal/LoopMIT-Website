@@ -26,7 +26,7 @@ import { LinkedinIcon } from "lucide-react";
 const alumniMembers = [
   {
     id: 1,
-    name: 'Soumya Maji',
+    name: 'Sougata Maji',
     role: 'Technical Head',
     bio: 'It has been a great honour to serve this team. I\'m incredibly proud of my juniors who have carried forward the legacy with consistency and dedication, helping us win our first prize.',
     image: Sougata,
@@ -179,7 +179,7 @@ export default function AlumniSection({
         </div>
 
         {/* Alumni Grid */}
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 auto-rows-fr justify-center">
+        <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-4 ">
           {alumniMembers.map((member) => (
             <AlumniCard key={member.id} member={member} />
           ))}
@@ -191,21 +191,35 @@ export default function AlumniSection({
 
 function AlumniCard({ member }) {
   return (
-    <div className="group bg-card border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+    <div className=' sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-4'>
+    <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 h-full "style={{
+        width: '45%',
+        height: '45%',
+        minWidth: '45%',
+        minHeight: '45%',
+      }}>
       {/* Image Container */}
-      <div className="">
+      <div className="mb-4 aspect-square overflow-hidden rounded-lg transform transition-transform duration-300 group-hover:scale-105"
+      >
         <img
           src={member.image}
           alt={member.name}
-          className="w-200px h-200px transition-transform duration-500 group-hover:scale-105"
+          className="w-2xs h-2xs object-contain justify-center transition-transform duration-500 group-hover:scale-110"
+          style={{
+            objectFit: 'contain',
+            objectPosition: 'center',
+            width: '40%',
+            height: '40%',
+            minWidth: '40%',
+            minHeight: '40%',
+           
+          }}
           onError={(e) => {
-            e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&size=300&background=6366f1&color=ffffff&bold=true`;
+            e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&size=200&background=6366f1&color=ffffff&bold=true`;
           }}
         />
-        <div className="absolute top-2 right-2 bg-primary text-primary-foreground text-xs px-2 py-1 rounded-md font-medium">
-          {member.academicYear}
-        </div>
-      </div>
+         
+
 
       {/* Content */}
       <div className="p-3 flex flex-col flex-1">
@@ -217,23 +231,29 @@ function AlumniCard({ member }) {
             {member.role}
           </p>
         </div>
-
+        
         <p className="text-muted-foreground text-xs leading-relaxed flex-1 line-clamp-3 mb-3">
           {member.bio}
-        </p>
-
+        </p>{/* Academic Year Badge */}
+       <div>
+         <div className=" text-primary text-xs">
+          {member.academicYear}
+        </div>
+      </div>
+      </div>
         {/* LinkedIn Link */}
         <div className="mt-auto pt-2 border-t border-border">
           <a
             href={member.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors duration-200"
+            className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors duration-100"
           >
             <LinkedinIcon size={20} />
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -148,7 +148,7 @@ export default function Navbar() {
             {/* Achievements */}
             <li className="nav-item">  <RouterLink to="/achievements" className="nav-link">Achievements</RouterLink>
 </li>
-<li className="nav-item">  <RouterLink to="/alumni" className="nav-link">Alumni</RouterLink>
+<li className="nav-item">  <RouterLink to="/alumni_page" className="nav-link">Alumni</RouterLink>
 </li>
           </ul>
         </div>

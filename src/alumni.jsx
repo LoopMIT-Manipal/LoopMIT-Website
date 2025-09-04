@@ -1,3 +1,4 @@
+import React from "react";
 import AlumniPage from "./components/alumni_page.jsx";
 
 const Alumni = () => {

@@ -5,21 +5,21 @@ import Animation1 from "./animation";
 import { Linkedin } from "lucide-react";
 
 // Using URL imports for images with spaces in filenames
-const Sougata = '/src/alumni_pics/SOUGATA_MAJI.jpg';
-const Aashish_Kumar = '/src/alumni_pics/Aashish_Kumar.jpg';
-const Sahil_Sinha = '/src/alumni_pics/Sahil_Sinha.jpg';
-const Shlok = '/src/alumni_pics/_Shlok_Singh_Alhuwalia.jpg';
-const Preyaan = '/src/alumni_pics/_Preyaan_Gupta.jpg';
-const Amrit = '/src/alumni_pics/_Amrit R.jpg';
-const Jash = '/src/alumni_pics/_Jash_Shah.jpg';
-const Nikhil = '/src/alumni_pics/Nikhil_Gupta.jpg';
-const HimaNandhan = '/src/alumni_pics/_HimaNandhan Alla.jpg';
-const Karan = '/src/alumni_pics/Karan_Kapoor.jpeg';
-const Rahul = '/src/alumni_pics/Rahul Sethia.jpg';
-const Pugazhendhi = '/src/alumni_pics/Pugazhendhi Priyan.jpeg';
-const Swetank = '/src/alumni_pics/_Swetank_Awasthi.jpg';
-const Abhishek = '/src/alumni_pics/_Abhishek Prakash.jpg';
-const Tejas = '/src/alumni_pics/Tejas Gajjala.jpg';
+import Sougata from '../img/alumni_pics/SOUGATA_MAJI.jpg';
+import Aashish_Kumar from '../img/alumni_pics/Aashish_Kumar.jpg';
+import Sahil_Sinha from '../img/alumni_pics/Sahil_Sinha.jpg';
+import Shlok from '../img/alumni_pics/_Shlok_Singh_Alhuwalia.jpg';
+import Preyaan from '../img/alumni_pics/_Preyaan_Gupta.jpg';
+import Amrit from '../img/alumni_pics/_Amrit R.jpg';
+import Jash from '../img/alumni_pics/_Jash_Shah.jpg';
+import Nikhil from '../img/alumni_pics/Nikhil_Gupta.jpg';
+import HimaNandhan from '../img/alumni_pics/_HimaNandhan Alla.jpg';
+import Karan from '../img/alumni_pics/Karan_Kapoor.jpeg';
+import Rahul from '../img/alumni_pics/Rahul Sethia.jpg';
+import Pugazhendhi from '../img/alumni_pics/Pugazhendhi Priyan.jpeg';
+import Swetank from '../img/alumni_pics/_Swetank_Awasthi.jpg';
+import Abhishek from '../img/alumni_pics/_Abhishek Prakash.jpg';
+import Tejas from '../img/alumni_pics/Tejas Gajjala.jpg';
 
 class AlumniSection extends React.Component {
   render() {

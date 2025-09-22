@@ -8,17 +8,17 @@ import { Linkedin } from "lucide-react";
 const Sougata = '/src/alumni_pics/SOUGATA_MAJI.jpg';
 const Aashish_Kumar = '/src/alumni_pics/Aashish_Kumar.jpg';
 const Sahil_Sinha = '/src/alumni_pics/Sahil_Sinha.jpg';
-const Shlok = '/src/alumni_pics/Shlok Singh Ahluwalia.jpg';
-const Preyaan = '/src/alumni_pics/Preyaan_Gupta.jpg';
-const Amrit = '/src/alumni_pics/Amrit R.jpg';
-const Jash = '/src/alumni_pics/Jash_Shah.jpg';
+const Shlok = '/src/alumni_pics/_Shlok_Singh_Alhuwalia.jpg';
+const Preyaan = '/src/alumni_pics/_Preyaan_Gupta.jpg';
+const Amrit = '/src/alumni_pics/_Amrit R.jpg';
+const Jash = '/src/alumni_pics/_Jash_Shah.jpg';
 const Nikhil = '/src/alumni_pics/Nikhil_Gupta.jpg';
-const HimaNandhan = '/src/alumni_pics/HimaNandhan Alla.jpg';
+const HimaNandhan = '/src/alumni_pics/_HimaNandhan Alla.jpg';
 const Karan = '/src/alumni_pics/Karan_Kapoor.jpeg';
 const Rahul = '/src/alumni_pics/Rahul Sethia.jpg';
 const Pugazhendhi = '/src/alumni_pics/Pugazhendhi Priyan.jpeg';
-const Swetank = '/src/alumni_pics/Swetank Awasthi.jpg';
-const Abhishek = '/src/alumni_pics/Abhishek Prakash.jpg';
+const Swetank = '/src/alumni_pics/_Swetank_Awasthi.jpg';
+const Abhishek = '/src/alumni_pics/_Abhishek Prakash.jpg';
 const Tejas = '/src/alumni_pics/Tejas Gajjala.jpg';
 
 class AlumniSection extends React.Component {

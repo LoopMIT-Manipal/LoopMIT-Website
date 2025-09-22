@@ -1184,11 +1184,6 @@ ABOUT
 PORTFOLIO
 */
 
-
-
-
-
-
 .work-box {
   margin-bottom: 0.5rem;
   -webkit-backface-visibility: hidden;
@@ -1215,10 +1210,17 @@ PORTFOLIO
 }
 
 .work-content {
-   padding: 1rem 8% 0rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 8% 0rem;
+  height: 100%; /* Ensures it fills card */
 }
 
+.bio{
+  height: 130px;
+}
 .work-content .w-more {
+  
   color: #4e4e4e;
   font-size: .8rem;
   padding-bottom: 3vh;
@@ -1254,6 +1256,10 @@ trying out different colors
   font-size: 0.85rem;
 }
 
+.linkedin-container {
+  margin-top: auto;
+  padding-top: 1rem;
+}
 /*
 TESTIMONIALS
 */

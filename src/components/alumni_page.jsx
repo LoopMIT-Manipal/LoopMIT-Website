@@ -8,17 +8,17 @@ import { Linkedin } from "lucide-react";
 import Sougata from '../img/alumni_pics/SOUGATA_MAJI.jpg';
 import Aashish_Kumar from '../img/alumni_pics/Aashish_Kumar.jpg';
 import Sahil_Sinha from '../img/alumni_pics/Sahil_Sinha.jpg';
-import Shlok from '../img/alumni_pics/_Shlok_Singh_Alhuwalia.jpg';
-import Preyaan from '../img/alumni_pics/_Preyaan_Gupta.jpg';
-import Amrit from '../img/alumni_pics/_Amrit R.jpg';
-import Jash from '../img/alumni_pics/_Jash_Shah.jpg';
+import Shlok from '../img/alumni_pics/Shlok_Singh_Alhuwalia.jpg';
+import Preyaan from '../img/alumni_pics/Preyaan_Gupta.jpg';
+import Amrit from '../img/alumni_pics/AmritR.jpg';
+import Jash from '../img/alumni_pics/Jash_Shah.jpg';
 import Nikhil from '../img/alumni_pics/Nikhil_Gupta.jpg';
-import HimaNandhan from '../img/alumni_pics/_HimaNandhan Alla.jpg';
+import HimaNandhan from '../img/alumni_pics/HimaNandhanAlla.jpg';
 import Karan from '../img/alumni_pics/Karan_Kapoor.jpeg';
 import Rahul from '../img/alumni_pics/Rahul Sethia.jpg';
 import Pugazhendhi from '../img/alumni_pics/Pugazhendhi Priyan.jpeg';
-import Swetank from '../img/alumni_pics/_Swetank_Awasthi.jpg';
-import Abhishek from '../img/alumni_pics/_Abhishek Prakash.jpg';
+import Swetank from '../img/alumni_pics/Swetank_Awasthi.jpg';
+import Abhishek from '../img/alumni_pics/AbhishekPrakash.jpg';
 import Tejas from '../img/alumni_pics/Tejas Gajjala.jpg';
 
 class AlumniSection extends React.Component {

@@ -10,6 +10,8 @@ import Sponsors from './components/sponsor.jsx';
 import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
+import Alumni from './alumni.jsx';
+import Achievements from './achievements.jsx';
 
 
 const Home = () => {
@@ -33,11 +35,14 @@ useEffect(() => {
       <Navbar />
         <Intro />
         <About />
+        <Achievements/>
         <Portfolio />
+        <Alumni />
         <Sponsors/>
         <Contact />
         <BackToTop />
         <Preloader />
+        
     </div>
   )
 }
